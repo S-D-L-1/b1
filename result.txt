@@ -1,0 +1,255 @@
+ _______ _            ____            _     _______                       
+|__| |__| |          | _ \           | |   |__| |__|                      
+   | |  | |__  ___   | |_) | ___  ___| |_     | | ___  __ _ _ __ ___   
+   | |  | '_ \/ _ \  |  _ < / _ \/ __| __|    | |/ _ \/ _\ | |_ \ _ \  
+   | |  | | | | __/  | |_) | __/\__ \ |_      | |  __/ (_| | | | | | | 
+   |_|  |_| |_|\___| |____/ \___||___/\__|    |_|\___|\__,_|_| |_| |_| 
+bare-metal-demo.elf: ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), statically linked, stripped
+type is binary, running np scan
+Scanned 6.68 KiB from 1 blobs in 0 seconds (158.56 KiB/s); 7/7 new matches
+
+ Rule                           Findings   Matches 
+───────────────────────────────────────────────────
+ AWS API Credentials                   1         2 
+ Generic API Key                       1         2 
+ GitHub OAuth Access Token             1         1 
+ GitHub Personal Access Token          1         1 
+ PEM-Encoded Private Key               1         1 
+
+Run the `report` command next to show finding details.
+
+----------------------------------------
+
+Finding 1/4 (id 6b12a14d6915608767e820de009fe4601c53b611)
+Rule: AWS API Credentials
+Group 1: ASIABECFPPCNXJYV4RTU
+Group 2: DS6Ml01Z4jIp04hIFM0xrNEuRSmg823/04jqugJ9
+
+    Match 1/2 (id 16bea960c3684939770ad204ee3dac8fe4f10d51)
+    File: bare-metal-demo.elf
+    Blob: cdbf8fba70c65bd9d8473a8216d30b207419c98c (6844 bytes, unknown type, unknown charset)
+    Lines: 2:146-2:230
+    Lines: 2:146-2:230
+    Lines: 2:264-2:350
+
+----------------------------------------
+
+Finding 2/4 (id f3eb2e440c00a79785ab8d158943f632a2a99468)
+Rule: GitHub OAuth Access Token
+Group: gho_3NIO5EKtltWAJwsV3FF4Ib4g138HQJYCS02k
+
+    Match 1/1 (id e7181e4d2fd62a4fa373855953867ff7dd2b45b1)
+    File: bare-metal-demo.elf
+    Blob: cdbf8fba70c65bd9d8473a8216d30b207419c98c (6844 bytes, unknown type, unknown charset)
+    Lines: 2:46-2:85
+    Lines: 2:46-2:85
+
+----------------------------------------
+
+Finding 3/4 (id aec60933198eaa0e0e3126c33d2b7bc1afebf475)
+Rule: GitHub Personal Access Token
+Group: ghp_TrUQQOrGwPM0npquMkBx0lLHaOrFLOEHYled
+
+    Match 1/1 (id 1d24bd16fde9b695ff7a7d1561567be735ccd00e)
+    File: bare-metal-demo.elf
+    Blob: cdbf8fba70c65bd9d8473a8216d30b207419c98c (6844 bytes, unknown type, unknown charset)
+    Lines: 2:87-2:126
+    Lines: 2:87-2:126
+
+----------------------------------------
+
+Finding 4/4 (id 9a49da703c61f89bc77d1af1f7a178f35dffd3c6)
+Rule: PEM-Encoded Private Key
+Group:
+
+    MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC35XIoks1b90ic
+    H8I4DPd5ultYCMmgQx3UfZvW+D9ftJs5K5GJ1MZLD3+06bAaVPFW4IcNCakPW7k+
+    cn4Nu14o8dC2pA49EXkUDYFqY97prI89gphxMd70jJgFkLAvL2oaCkubIqWynT0j
+    6O4AZxH813F0S15r4xG0JD+zGXxDFiH3yskBMLtt8ItR7WcxEbKyuJfbLobg0nSV
+    DxUtydW6/fpPj3UC9VOsmMb7ghQdVrOSZtSPMtmBZrPNBg08QDQSak2TsYrhDipe
+    DqiidV8L71iMVN7UWsteBbgEk+oJEfg8bVPrO6LgNjBK3LspF1mMvGMT3xVTvudK
+    a74pXLiTAgMBAAECggEAByr73KYAOC322BMK1Hl46fdAGTnadhM3pfExclshyT62
+    cC+JEDjJc+KKRUh4k0YtVAgTa4gtXUpjeZIn5KwhevIWAxB495tnP0dZfIahCTWv
+    LaQaAguCF8ElKc5ed7Be793n3YenssMbP3uUT1K1KkhRhUlsyELFDWL+UqJTLCAv
+    Q5VEzsf1yL8kai4cBuPsS5ItSA+zz2MnJIApnvZ7/g/+hMiRbN31mo4Voe31hZok
+    /7wStutQ5CJVoEmMa681oyPCrv0Q/wZ57lCDLmLkevpJ7sIuwvPVq8CUOThY9DsO
+    g/8RrndYbMp6k1a4r2u+D80pVViOX4Q0Th0mo57OzQKBgQDpxCk5M2mmM/8noc6X
+    1vUlH3Sl41/tW3CWYqLe0KnWh7oJ5+YP3Pl8tmrH9LbAsJKdjGhKVX1N1hHqLZSD
+    ER9bLprfYh59udYar9qyZ1h8dGBM4v7CQXXPPr2nvJw4j46RJLYWvlkJ+V1CxEZk
+    pNM/CMt/RzrVXuKzbSmqmo3R5wKBgQDJYweXg/E3h4RWxyrde3z93fqNYMi//qWC
+    ooh1/Ohhwd+D5N89a2T37lgRXVIroh0q1Ifj3mjzMllFbTfYUCUS+tHnR2V0d0s0
+    7nJYpwmOkxJ8pkSsEY6WPp+0TbkKjuh+yco2Qcb/tYBAK+mqIc/OMnGNg2UxRIYJ
+    ClwBvhCmdQKBgQDBQa5i36IkCTCT7y0AUnFwM0UYL5WKgOHfMcQ8OH1wId0ne1Oz
+    IZgQBi7ZB/Jd8pwDK6S8b1icFLHSy8PPZ0Ro+WqH6nIStqPOhDtk6hM5MGy8o5zB
+    s6RVpSTdmwv7ppLSY2s1+j9aA5GaNPGNGsaZggfaPWTiKQN6GnEr3YIJWQKBgFC6
+    OM3c3zISSdN7bUxxdw5REGHh/Tcxfela+/bIFeMyE0ZM1cxKI6RbT8ROM2U4TBbi
+    MUL/4fQzJ6Pz/yHgJqxwDPp4HUxNkcE7IG03MFaN0ChVgkuzkgPaQKzHRzjbRomk
+    nEGZporUl/+hWr6PZTzT7b77f/H69PvkwjMUnJoNAoGBALO3FRa1N8dfvKe2CMRV
+    VGhGNB8kC9l/pW80rzS2oUfOqPMiKCfIXv7veitv2HvMuBThMj32cYXoYQXPtehE
+    jRsM8FX0I5MTf4AkUmpDTMU4ZGkVgT3Y6L/Yc4RI9v2VBPcYm2Q32LyX4TLQ/zUj
+    IUxYwTxohfrNAwcROsol7Knh
+
+
+
+    Match 1/1 (id 5731ce2464d7b57ed6628a5e554dc3a8f36da22d)
+    File: bare-metal-demo.elf
+    Blob: cdbf8fba70c65bd9d8473a8216d30b207419c98c (6844 bytes, unknown type, unknown charset)
+    Lines: 2:415-29:25
+    Lines: 2:415-29:25
+bare-metal-takehome.elf: ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), statically linked, stripped
+type is binary, running np scan
+Scanned 6.68 KiB from 1 blobs in 0 seconds (194.68 KiB/s); 5/5 new matches
+
+ Rule                           Findings   Matches 
+───────────────────────────────────────────────────
+ AWS API Credentials                   1         2 
+ GitHub OAuth Access Token             1         1 
+ GitHub Personal Access Token          1         1 
+ PEM-Encoded Private Key               1         1 
+
+Run the `report` command next to show finding details.
+
+----------------------------------------
+
+Finding 1/4 (id cdb5edf18f2a01c1e19c8bed021fc2886c450957)
+Rule: AWS API Credentials
+Group 1: AROA8OSUGYZIZ7LGP7BX
+Group 2: I3QjGERpxISUFXF9x2ZJ=KrF=tCvvZJl+u3dTVi1
+
+    Match 1/2 (id 5efa0e3aa1f9d4ef4fd413aeec6df1d8b63cfe34)
+    File: bare-metal-takehome.elf
+    Blob: 4b503c3ea1d07a4ceb553907a82c9391e62ec869 (6844 bytes, unknown type, unknown charset)
+    Lines: 2:146-2:230
+    Lines: 2:146-2:230
+    Lines: 2:264-2:350
+
+----------------------------------------
+
+Finding 2/4 (id 3c87343f222828808088e80b979ecc12d717e282)
+Rule: GitHub OAuth Access Token
+Group: gho_8oN6PENOTQx4y00M5ow86V4PaeG8l2zvGk8z
+
+    Match 1/1 (id 97985cbaacc64d9a04919c13c0f6dc7deaabf6d7)
+    File: bare-metal-takehome.elf
+    Blob: 4b503c3ea1d07a4ceb553907a82c9391e62ec869 (6844 bytes, unknown type, unknown charset)
+    Lines: 2:46-2:85
+    Lines: 2:46-2:85
+
+----------------------------------------
+
+Finding 3/4 (id c9268aaf23bc72c4f41cad0ffba2622fbddb7723)
+Rule: GitHub Personal Access Token
+Group: ghp_qhfNsKzF6bnfrLDnwoFoXT1edGpUVsZb0RFu
+
+    Match 1/1 (id 43d096226fa464bac1d2764c85eb88e6513cc333)
+    File: bare-metal-takehome.elf
+    Blob: 4b503c3ea1d07a4ceb553907a82c9391e62ec869 (6844 bytes, unknown type, unknown charset)
+    Lines: 2:87-2:126
+    Lines: 2:87-2:126
+
+----------------------------------------
+
+Finding 4/4 (id c7451741b201b74c5daa70f1bacf8497c1d9bf95)
+Rule: PEM-Encoded Private Key
+Group:
+
+    MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCiWlYqOGr9KnIN
+    BsKfmHYO456Gw6BkyYGpSyg+dTiqgmz4FbB+XkmwKcMgXidArpOEr3wDuJJN2n0p
+    8UCxMdrk1aEtRQ/5+/ai6uaZEsTVgTcoh9yUl5Xr6JGQxGukX4J+3enN0xQ1NHUs
+    +D+QFZk9vLF46/U9syouenn2ykr3FsyVuPy5NOxHzgYgiDB3WZ7SI2m++ia6c3Q2
+    e8dTAutEIGG74bY8HLyV1HErRnWxqSwe5sYxSxZ3yhUEDSqVE9cRJgwDS0XDxVQ6
+    KbYsfBPAFF1ltU7hwTEroJuGC5yiG45x7z1PiNL8W+Ulbt5dsTWj22hNFB0SpaMU
+    Al35tuQRAgMBAAECggEALD8cfpMzrV2VCbHO9vnxKuuj96x3GSDF4qKmDCecUvQK
+    yK34lOgTgxxOnpKqdfleIOpGjSkPToJ+XCDw9ZnVw0npjFHnIcUmmY4VXKB93oZB
+    xx0H48NQS6PtkBvIDlstUHAgWUTum/V4/dGGWTlZszaq037TLoaWt2YPuU+2kJJJ
+    /UqGck0GEXJ4fm/2IUNlw94Ruy5Sh6Kpr09OJrr6vjTF6kEvsbhGRi+Sm2e3QAgk
+    6Y6rpdOmd3I214gUF79WcmZQf1z/tDn4KhztCEoLq99wgmuR6w6bkm1XXTkl37i8
+    yuVwM4s8iNOycAK/WW/00BYCrTyJO4AnonfDXkMKhQKBgQDNMkxz5qgGMtSOcuEb
+    s+AeqClUKAVc2jLz6GobcM0cVHAaltJpYn2LMA9wTmbf3nuxVienpjS3o8ou9OF9
+    b67h1MMCGCT85dZOjU2ciTFG2GfZf/gE/SNZI0/efKHDD1LMNAXSt6JRvYMuxr4/
+    ZWNL3CSn8Mfc2EVXQxHlZhYhQwKBgQDKjIml+mOdXUa5Ak+DZWLIVzbC4p5sMlzG
+    ggakjxsryDyuabaCMtDingdEcVfi4dlRTxvzWeSAhf18kp5qqIFvRR54uxk59R1a
+    1xVM+alBO2QK5qt/JSZtbIDtu10MmbLAGN9Lw3dWdftdlOxIoDlp32igS1bHYwTK
+    /1f0+Ln2GwKBgB/0e095ViVQ+SUN4tyLkJV1nqoKaXtiR5kQUqXfVTHaPHMHldDv
+    k5l/bIgSzZaDcUPWpOpIyeDnUu8pF4yPPe7RUWUcGXaA3HTzMGj2PIRJ4zJN6XPt
+    b/nLs/5z7kUQN9axK077Zf3Qw4MfVDVPNr1zlQnKR3WvAG1sdncBBOU9AoGAOcQ5
+    Ibg2ntPSbsNk8AGDWcXd3VkKe6slYIwG3vndcvAptkh5/8oEXw1Y30FAInntI85f
+    F1lk3O7Z66RZP+wM9jINTbt2p1vr4lODRK/TgMIydxVwhdOPkRen8aVFFWnkW/r7
+    /DykFWmSpg7qEJB5r2NDEKxL9JOd81M9v6UMTE8CgYAbalNVfPhE82vk0EwBDw8z
+    w6AFUdQ9uRi8XOcaRcxC/vGOIWT7tgift3q67XEL505hyHuY45MXUTwv342Mn7h1
+    Z0KN9o53048GnWe/CD9akBjrprRFJWsEyKhgJPPPw2D6DzJx8R1tiqeBuACWWJuc
+    glTNI2/5VH20x2ADoqnUXQ==
+
+
+
+    Match 1/1 (id df41efbf31fd78bff739b47dc5f83325d9bf326d)
+    File: bare-metal-takehome.elf
+    Blob: 4b503c3ea1d07a4ceb553907a82c9391e62ec869 (6844 bytes, unknown type, unknown charset)
+    Lines: 2:415-29:25
+    Lines: 2:415-29:25
+dcs-8000lh.bin: data
+type is data, running binwalk
+BusyBox version: syslogd started: BusyBox v1.22.1
+possible init scripts: _dcs-8000lh.bin.extracted/squashfs-root/mydlink-watch-dog.sh:  if [ -f "/etc/rc.d/init.d/lighttpd.sh" ]; then
+_dcs-8000lh.bin.extracted/squashfs-root/mydlink-watch-dog.sh:    /etc/rc.d/init.d/lighttpd.sh stop
+_dcs-8000lh.bin.extracted/squashfs-root/mydlink-watch-dog.sh:    /etc/rc.d/init.d/lighttpd.sh start
+_dcs-8000lh.bin.extracted/squashfs-root-0/bin/factoryReset:/etc/rc.d/init.d/logd.sh stop
+_dcs-8000lh.bin.extracted/squashfs-root-0/bin/factoryReset:/etc/rc.d/init.d/dbd.sh stop
+Scanned 16.00 MiB from 1 blobs in 0 seconds (41.05 MiB/s); 2/2 new matches
+
+ Rule                             Findings   Matches 
+─────────────────────────────────────────────────────
+ Base64-PEM-Encoded Private Key          1         1 
+ PEM-Encoded Private Key                 1         1 
+
+Run the `report` command next to show finding details.
+
+----------------------------------------
+
+Finding 1/2 (id 41163c02cf6d589bea7cc905c6ffcdf57fb1f04a)
+Rule: Base64-PEM-Encoded Private Key
+Group: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpQcm9jLVR5cGU6IDQsRU5DUllQVEVECkRFSy1JbmZvOiBERVMtRURFMy1DQkMsNjAxODdDQkQzNERENjZENgoKcmd1TmpqQ1gydHQ2bU5IVlY2WGNQa0laSUNkb2wwZER6eU9TWG0zdm1qblpuZERKMTBVQWF5SDFLNHFHaUtoUQpTaHBvNTBRZ2xibGR5ekl0MVdhTFBrcnczczdueG5rVlFmUXI3WS9PU1gxSFBGQTAzSkZCRXdSOFQxc1ZpaE1vClZqY1VISTEyd0RDWXZKeG14S0s4cjM5WTM3VG1sNWtIV3k5MTAwM3JPREpvOUFOOTlDNEpwa29sM2w3YnpjV2oKNC9iNDF1djdrTG5XNDcxSTNOemFnUEltLzQzMnpGQTJWUTdQdkdyNU1COHphUnJ3RlFqQzFxK09ZL1pUQXZCRApTc3M0TEF2cXhBRGlpVkJKdjhnblVQamkyOUpGbU5od1JibDVZZUV1VXhYbktpVWZsc1RPd3p2azE5TmJnL013CjVLMGVYZHBKazNXUGJqNmV1ckVWQWtRQVd4M0pNdGJSMjBRMzUxY3BwNFFjMm5UZlpnYUlxazJUTFB6TlhDb1EKeVFDalhrVW51aUphQU1wNU5ZM0VWTzJJVnFDcWN3NW5UcmxvSnJmakNDbHR4c29aaE1KR1YzRDlleHh2R2FpUApvQkxHNk9DODRqTVJJdFpCMU9rOTlCWkUwcklQS3pzbWhiZytuMzJZSmxiVkZZckFsWng5K1N6dnVmTW1DbDNhCnRJbm05aHkxbW1wUnNNQjZQRDRCbUVtMjdpU1J4OU01WTlVRVNKcVMrVlFuYytHa0FKbWlKYTdValVuQmJ5M0wKT2d2YS9lQ0tUV3BJellwRW5Ra05jTUlyRmVmZHdMZS9ZZDMrNmtKREZWL3NzZGU1c2k3eThyTDZOUksxOXJzOQpPRU1yODBnbysvYVhobFhrZWtDOUZFU3hjQTJtWmw3aUQ1NWxzSU9NdnNsQTVDNjA3cFFTSFdOQTIzWEhBQUgzCjd0SThuNHNzZUhMTEJqN0NheFR1aWxnb1ExMS9IUWZhMGQwTU02bDIwZWY4WWcxc1BJd1Y3dDhWTkhKaG41YXoKS0I1elQ0Wjl1ZERFTmJKblgrMGRzU1JORCtvZVZSR3crVjJmc3RJaHNCc0k1T1BzTVNSd1dLSE9zZ1NQcmdUSApCNW5ZL3lST1Q0N1JSdjVpem1KdGRWZWtyd3RkREdJU2hJcmpjRTBhcFBSNnRqUHgrdkVGa2xpaFljOVZjZEVRCi91QU5oRFRXT0dwMVptYXZYSTZvMjdBajJrb09Lc1NXRWcvZkNjaGRPdUl4emZ6QlM3bkNiN0ZJdzNadmRzZFYKT2xIMUV0QVovV3FFOEt0SFNHWDV4RXhHdEFPcGViUDJwQ2lLcmFPT24ra1FMdnBtdWczUmZUYmhLSzBOQ3d2ZgpIbi81N3pJZE8xbWpFUUVVK3UxSVZ6Z2V0MitaanU2eEVLdFErTS8vREViZ1l5TUIyWjhVT2owWWw4RlFCZVBVCmZacGJCZEdBdVcxUWhzelA5cklHb20xVnkwQUhFZ0g0ZHM3bS96eHYzQkFSSUxRdDM2ZS94RGphZ2FPc0Y3bXcKMnhreE1tUjRnYWZRY2JGRGI4WVBOdWhlRnJ1SUZTWmhyZ0NJTTNXYWo4ZHoyWnlyY0toaU5YR25YdnF6N00rawowbldCZEZOUStVNW5uWEZHWEpiM2ZYVWwyckFmWEpHUXN1NkRZb0Q3MER6ako0bFFYRERuT0laNlZhN2VETzNICmJBOVlsZzNnL1krRHplQzl3MXJwOVRtbzVSc2lxb0hzQS85MWRUV3JLdnRpOGdacXVoMWNvd3N1TlpHMkZyUUIKTEwrblBjNkFVNE11R2FlTmt0MlVwQVEwSEp0MWJoNFhQa1RNNitzaHdtcFd6c2tIdG5DRHl6WVhJeG81Y2VPMQp4bjdkVVdHazN1a1FhOW54dlJkaEJaOE04a1Y0NitSWkpDYTlEdklhdE9UYmtRUEZRekp4Um9qOEFaS1U5WVN3CmhybVRuekEraFhEbHA4dDBINDduQkdHZlQ2U1pnQ3NLcjJJdDdLQ3lOa3RlL0JFQ0htRTFoM3dEMXNRaFBDejYKZkowbHI5MlRidlJuWkFIa0lJTHpSOUsyMUdTaUtnTXFhNi94N2t0VmZVVFFXU1hvQWYyYlgzK280SForeHR1VQotLS0tLUVORCBSU0EgUFJJVkFURSBLRVktLS0tLQo=
+
+    Match 1/1 (id 7e7fc2b73979696962e7561aef78051c808e75f1)
+    File: dcs-8000lh.bin
+    Blob: a87757765d2eaadee1fcaba1193ac15fc3f0ecbb (16777216 bytes, application/octet-stream, unknown charset)
+    Lines: 683:418-683:2754
+    Lines: 683:418-683:2754
+
+----------------------------------------
+
+Finding 2/2 (id de994cab95b8298508695d738b15755fa42a816a)
+Rule: PEM-Encoded Private Key
+Group:
+
+    MIICXQIBAAKBgQC87QYtji6c0odxDs5SON+lpP0WE52WMK4OuRo8mHL0HWi0bZe0
+    dyDcJ6IO6EwKuIn0sJi5oY8/P0g3PAp4TTlZm6WBiwZ8XaPwnGY8Kd2lrcRvPR+0
+    UJ07hQ4RvhfFmanN8KEhe/myKkMldO/reyW8nwRRJwc2OHEvZ81KfAppWwIDAQAB
+    AoGAKGeIqrV9woxD6yn/dhYzvnlKpy4KxdQjZYKw2cTA0PR5MB1AFJhlrq/LOOT1
+    XlWZK3uZLhofSKeAClAM7S2W1fTbxmM8y/3g6c5Z3LbpNsvwVTWNp5ErbKMMeR+q
+    CnUA+NQ47f65EwUUyTIWhMcgINLjZT33Eg0DOPUVIoiDEgECQQDta5ehRLQQN8Tr
+    5OROwFrJA3qL4g+qmcnUrVfgDE/ro1zxcYluleg8ZCAJbhBgju7Y75voRlrZITkF
+    2dGFZq4PAkEAy7Xowx+az4ZU6Iw/AGmbv801digR9345UKZZNRLffLh0Hda2mPM+
+    25whWWTMiPcY0ty9/MZovZvVyuYuxzHb9QJBAJlbEgpdMmH3Y/9rTf2ASiPlV1bb
+    onrz82aowUY7LbRrRTG/wKHpuqSnl/n/WhzEtorx2qbiKvRtfUPGOowMkwkCQGgi
+    n9BPcbYwd2tBdlthoUrVPkUeisC399iwkN2+vhxltoYiYsmhXzqof6vRCXXiyv/P
+    9Bcp3hU/enT0YmlVpZkCQQDmsui42t0uup3hj6ITZa2JRkCCUI7qyU0HrE65lj88
+    s4IoUXr0RWUtnEbeDUbw2GtQVHNoldXVXSh30SDb6El7
+
+
+
+    Match 1/1 (id 014d0472b100572024c7a8d1aacd4d77e0135e3d)
+    File: dcs-8000lh.bin
+    Blob: a87757765d2eaadee1fcaba1193ac15fc3f0ecbb (16777216 bytes, application/octet-stream, unknown charset)
+    Lines: 668:102959-682:29
+    Lines: 668:102959-682:29
+result.txt: Unicode text, UTF-8 text, with very long lines (2343)
+type is unknown, skipping
+wr-841n.bin: data
+type is data, running binwalk
+BusyBox version: BusyBox v1.19.2 (2022-08-16 12:08:08 CST)
+possible password files: _wr-841n.bin.extracted/squashfs-root/etc/passwd.bak
+possible init scripts: _wr-841n.bin.extracted/squashfs-root/etc/inittab:::sysinit:/etc/init.d/rcS
+Scanned 4.00 MiB from 1 blobs in 0 seconds (17.64 MiB/s); 0/0 new matches
+
+Run the `report` command next to show finding details.
